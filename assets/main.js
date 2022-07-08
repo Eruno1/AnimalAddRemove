@@ -12,7 +12,13 @@ console.log(`Actualmente en el zoologico se encuentran disponibles para ver los 
 
 function agregarQuitar() {
     let respuestaUsuarioRaw = prompt(`Que desea hacer, agregar o quitar animales?`)
-    let respuestaUsuarioMinus = respuestaUsuarioRaw.toLowerCase()
+    let respuestaUsuarioMinus = null
+    console.log(respuestaUsuarioRaw)
+    if (respuestaUsuarioRaw !== null) {
+        respuestaUsuarioMinus = respuestaUsuarioRaw.toLowerCase()
+    }
+    console.log(respuestaUsuarioRaw)
+
     switch (respuestaUsuarioMinus) {
         case "agregar":
             let response = prompt("Que animal desea agregar?")

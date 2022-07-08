@@ -1,0 +1,14 @@
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.b1 {
+    margin-bottom: 20px;
+}
+
+.b1 .b2 {
+    border: none;
+    padding: 5px;
+}
